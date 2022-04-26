@@ -36,6 +36,18 @@
   background-color: transparent;
 }
 
+.button--dodo {
+  color: greenyellow;
+  border-color: brown;
+  background-color: transparent;
+}
+
+.button--dodo:hover {
+  color: pink;
+  border-color: brown;
+  background-color: $danger-color;
+}
+
 .button--danger:hover {
   color: $white;
   background-color: $danger-color;
