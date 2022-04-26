@@ -4,7 +4,12 @@ import "components/Button.scss";
 
 export default function Button(props) {
    let buttonClass = 'button';
+   let disabled = '';
 
+   if (props.disabled){
+      disabled = 'disabled'
+   }
+   
    if (props.confirm) {
       buttonClass += " button--confirm"
    }
@@ -13,7 +18,8 @@ export default function Button(props) {
       buttonClass += " button--danger"
    }
 
+
    return <>
-      <button className={buttonClass}> {props.children}</button>
+      <button disabled={disabled} className={buttonClass} onClick={props.onClick}> {props.children}</button>
    </>;
 }
