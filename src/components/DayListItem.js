@@ -12,7 +12,7 @@ export default function DayListItem(props) {
     } else if (spots === 1) {
       return "1 spot remaining"
     } else {
-      return `${spots} spots remaining`
+      return `${spots} spots remaining  Adams FIRST commit from macbook pro`
     }
   }
 
