@@ -5,14 +5,13 @@ import classNames from "classnames";
 
 
 export default function DayListItem(props) {
-
   let formatSpots = (spots) => {
     if (spots === 0) {
       return "no spots remaining"
     } else if (spots === 1) {
       return "1 spot remaining"
     } else {
-      return `${spots} spots remaining  Adams FIRST commit from macbook pro`
+      return `${spots} spots remaining`
     }
   }
 
